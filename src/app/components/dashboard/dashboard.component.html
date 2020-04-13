@@ -1,0 +1,36 @@
+<app-header [title]="'Kid\'s Book Debate Club'"></app-header>
+<app-body>
+  <div class="row">
+    <div class="col-md-6 my-3">
+      <app-card [title]="'Kid\'s Book Debate Club'" [icon]="'fa-book'">
+        <button class="btn btn-primary" (click)="goKidsBookClub()">Go</button>
+      </app-card>
+    </div>
+  </div>
+</app-body>
+<app-body-alt>
+  <div class="row">
+    <div class="col-md-6 my-3">
+      <app-card [title]="'Donate to Charity'" [icon]="'fa-money'">
+        <p>
+          Like this free website? Pay it forward to a charity I support.
+        </p>
+        <a
+          class="btn btn-secondary"
+          href="https://aoti-app-hub.herokuapp.com/donate"
+          target="_blank"
+        >
+          Donate
+        </a>
+      </app-card>
+    </div>
+    <div class="col-md-6 my-3">
+      <app-card [title]="'More Information'" [icon]="'fa-info-circle'">
+        <p>
+          Just curious about this site? Get more information about this website.
+        </p>
+        <button class="btn btn-secondary" (click)="goToInfo()">Info</button>
+      </app-card>
+    </div>
+  </div>
+</app-body-alt>
