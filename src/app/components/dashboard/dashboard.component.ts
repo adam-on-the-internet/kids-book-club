@@ -35,8 +35,4 @@ export class DashboardComponent {
     this.navHelper.goDetails();
   }
 
-  public goKidsBookClub() {
-    this.navHelper.goKidsBookClub();
-  }
-
 }

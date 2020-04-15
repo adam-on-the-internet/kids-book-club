@@ -33,10 +33,6 @@ export class NavHelperService {
 
   // projects
 
-  public goKidsBookClub(): void {
-    this.goToRoute(ROUTES_ENUM.KidsBookClub);
-  }
-
   public goDetails(): void {
     this.goToRoute(ROUTES_ENUM.Details);
   }

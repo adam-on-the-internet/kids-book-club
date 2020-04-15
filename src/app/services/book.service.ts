@@ -1,29 +1,16 @@
-import { Injectable } from '@angular/core';
-import { Book } from '../models/Book.model';
+import { Injectable } from "@angular/core";
+import { Book } from "../models/Book.model";
+import { BOOK_LIST } from "../constants/book.constants";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class BookService {
-  public books: Book[] = [
-    {
-      id: "1",
-      title: "Mike Mulligan and his Steam Shovel",
-      details: "",
-      debateQuestion: "",
-      sides: [
-        {
-          name: "",
-          details: "",
-        },
-        {
-          name: "",
-          details: "",
-        },
-      ],
-      youtubeLink: "https://www.youtube.com/watch?v=NQjHJKNyoUE&feature=emb_title",
-    }
-  ];
+  public get allBooks(): Book[] {
+    return BOOK_LIST;
+  }
 
-  constructor() { }
+  public get nextBook(): Book {
+    return this.allBooks[0];
+  }
 }
