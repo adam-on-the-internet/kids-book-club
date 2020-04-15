@@ -6,9 +6,10 @@
   <hr />
   <h4>Debate</h4>
   <p>{{ book.debateQuestion }}</p>
-  <ng-container *ngFor="let side of book.sides">
+  <ng-container *ngFor="let side of book.sides; let i = index">
     <p>
-      <strong>{{ side.name }}:</strong>
+      Side #{{ i + 1 }}
+      <strong>{{ side.name }} - </strong>
       {{ side.details }}
     </p>
   </ng-container>
