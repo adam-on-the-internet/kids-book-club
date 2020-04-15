@@ -1,10 +1,29 @@
 <app-header [title]="'Kid\'s Book Debate Club'"></app-header>
 <app-body>
-  <div class="row">
-    <div class="col-md-6 my-3">
-      <app-card [title]="'Kid\'s Book Debate Club'" [icon]="'fa-book'">
-        <button class="btn btn-primary" (click)="goKidsBookClub()">Go</button>
-      </app-card>
+  <div class="row text-white">
+    <div class="col-md-4 my-4 text-center">
+      <i class="fa fa-book fa-4x"></i>
+      <h3>Books</h3>
+      <p>Want to know the next book or past books?</p>
+      <button class="btn btn-secondary btn-block" (click)="goKidsBookClub()">
+        Go
+      </button>
+    </div>
+    <div class="col-md-4 my-4 text-center">
+      <i class="fa fa-envelope fa-4x"></i>
+      <h3>Mail List</h3>
+      <p>Want to get updates about the book club?</p>
+      <button class="btn btn-secondary btn-block" (click)="goKidsBookClub()">
+        Sign Up
+      </button>
+    </div>
+    <div class="col-md-4 my-4 text-center">
+      <i class="fa fa-question fa-4x"></i>
+      <h3>Details</h3>
+      <p>Want to know how the book club works?</p>
+      <button class="btn btn-secondary btn-block" (click)="goKidsBookClub()">
+        Find Out
+      </button>
     </div>
   </div>
 </app-body>
