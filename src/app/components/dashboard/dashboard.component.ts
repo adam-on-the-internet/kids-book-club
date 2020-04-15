@@ -23,6 +23,18 @@ export class DashboardComponent {
     this.navHelper.goToInfo();
   }
 
+  public goBookList() {
+    this.navHelper.goBookList();
+  }
+
+  public goMail() {
+    this.navHelper.goMail();
+  }
+
+  public goDetails() {
+    this.navHelper.goDetails();
+  }
+
   public goKidsBookClub() {
     this.navHelper.goKidsBookClub();
   }

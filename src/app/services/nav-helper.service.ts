@@ -37,6 +37,22 @@ export class NavHelperService {
     this.goToRoute(ROUTES_ENUM.KidsBookClub);
   }
 
+  public goDetails(): void {
+    this.goToRoute(ROUTES_ENUM.Details);
+  }
+
+  public goMail(): void {
+    this.goToRoute(ROUTES_ENUM.Mail);
+  }
+
+  public goBookList(): void {
+    this.goToRoute(ROUTES_ENUM.BookList);
+  }
+
+  public goBookDetails(id: string): void {
+    this.goToRoutes([ROUTES_ENUM.BookDetails, id]);
+  }
+
   // GENERAL
 
   private goToRoute(route: string): void {
