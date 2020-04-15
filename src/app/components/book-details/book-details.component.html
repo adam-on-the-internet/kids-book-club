@@ -5,7 +5,7 @@
       <app-book-info-card
         *ngIf="ready; else loading"
         [next]="true"
-        [book]="bookService.nextBook"
+        [book]="book"
       ></app-book-info-card>
     </div>
   </div>
