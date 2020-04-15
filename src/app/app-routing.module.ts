@@ -9,7 +9,7 @@ import { AdminComponent } from "./components/admin/admin.component";
 import { BookDetailsComponent } from "./components/book-details/book-details.component";
 import { BookListComponent } from "./components/book-list/book-list.component";
 import { DetailsComponent } from "./components/details/details.component";
-import { MailListComponent } from "./components/mail-list/mail-list.component";
+import { JoinComponent } from "./components/join/join.component";
 
 const routes: Routes = [
   // main
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: ROUTES_ENUM.Admin, component: AdminComponent },
   // projects
   { path: ROUTES_ENUM.Details, component: DetailsComponent },
-  { path: ROUTES_ENUM.Mail, component: MailListComponent },
+  { path: ROUTES_ENUM.Join, component: JoinComponent },
   { path: ROUTES_ENUM.BookList, component: BookListComponent },
   { path: ROUTES_ENUM.BookDetails + "/:id", component: BookDetailsComponent },
   // default

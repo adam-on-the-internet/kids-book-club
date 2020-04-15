@@ -20,9 +20,9 @@ import { CardComponent } from "./components/card/card.component";
 import { BodyAltComponent } from "./components/body-alt/body-alt.component";
 import { BookListComponent } from "./components/book-list/book-list.component";
 import { BookDetailsComponent } from "./components/book-details/book-details.component";
-import { MailListComponent } from "./components/mail-list/mail-list.component";
 import { DetailsComponent } from "./components/details/details.component";
 import { BookInfoCardComponent } from "./components/book-info-card/book-info-card.component";
+import { JoinComponent } from "./components/join/join.component";
 
 @NgModule({
   declarations: [
@@ -42,9 +42,9 @@ import { BookInfoCardComponent } from "./components/book-info-card/book-info-car
     BodyAltComponent,
     BookListComponent,
     BookDetailsComponent,
-    MailListComponent,
     DetailsComponent,
     BookInfoCardComponent,
+    JoinComponent,
   ],
   imports: [
     BrowserModule,

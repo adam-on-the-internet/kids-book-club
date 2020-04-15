@@ -1,23 +1,23 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MailListComponent } from "./mail-list.component";
+import { JoinComponent } from "./join.component";
 import { HeaderComponent } from "../header/header.component";
-import { BodyComponent } from "../body/body.component";
 import { CardComponent } from "../card/card.component";
+import { BodyComponent } from "../body/body.component";
 
-describe("MailListComponent", () => {
-  let component: MailListComponent;
-  let fixture: ComponentFixture<MailListComponent>;
+describe("JoinComponent", () => {
+  let component: JoinComponent;
+  let fixture: ComponentFixture<JoinComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MailListComponent, HeaderComponent, BodyComponent, CardComponent]
+      declarations: [JoinComponent, HeaderComponent, CardComponent, BodyComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailListComponent);
+    fixture = TestBed.createComponent(JoinComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

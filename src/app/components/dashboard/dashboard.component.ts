@@ -27,8 +27,8 @@ export class DashboardComponent {
     this.navHelper.goBookList();
   }
 
-  public goMail() {
-    this.navHelper.goMail();
+  public goJoin() {
+    this.navHelper.goJoin();
   }
 
   public goDetails() {

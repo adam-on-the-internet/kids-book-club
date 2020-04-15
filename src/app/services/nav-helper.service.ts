@@ -37,8 +37,8 @@ export class NavHelperService {
     this.goToRoute(ROUTES_ENUM.Details);
   }
 
-  public goMail(): void {
-    this.goToRoute(ROUTES_ENUM.Mail);
+  public goJoin(): void {
+    this.goToRoute(ROUTES_ENUM.Join);
   }
 
   public goBookList(): void {
