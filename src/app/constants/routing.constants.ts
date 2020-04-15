@@ -4,7 +4,7 @@ export const enum ROUTES_ENUM {
   Profile = "profile",
   Admin = "admin",
   Login = "login",
-  Details = "details",
+  Rules = "rules",
   Join = "join",
   BookList = "book-list",
   BookDetails = "book-details",

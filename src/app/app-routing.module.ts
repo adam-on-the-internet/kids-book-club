@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: ROUTES_ENUM.Profile, component: ProfileComponent },
   { path: ROUTES_ENUM.Admin, component: AdminComponent },
   // projects
-  { path: ROUTES_ENUM.Details, component: DetailsComponent },
+  { path: ROUTES_ENUM.Rules, component: DetailsComponent },
   { path: ROUTES_ENUM.Join, component: JoinComponent },
   { path: ROUTES_ENUM.BookList, component: BookListComponent },
   { path: ROUTES_ENUM.BookDetails + "/:id", component: BookDetailsComponent },

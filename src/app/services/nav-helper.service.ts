@@ -33,8 +33,8 @@ export class NavHelperService {
 
   // projects
 
-  public goDetails(): void {
-    this.goToRoute(ROUTES_ENUM.Details);
+  public goRules(): void {
+    this.goToRoute(ROUTES_ENUM.Rules);
   }
 
   public goJoin(): void {

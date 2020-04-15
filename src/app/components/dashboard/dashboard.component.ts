@@ -31,8 +31,8 @@ export class DashboardComponent {
     this.navHelper.goJoin();
   }
 
-  public goDetails() {
-    this.navHelper.goDetails();
+  public goRules() {
+    this.navHelper.goRules();
   }
 
 }

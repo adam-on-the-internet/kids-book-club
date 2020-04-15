@@ -37,6 +37,14 @@ export class NavbarComponent {
     this.navHelper.goBookList();
   }
 
+  public goJoin(): void {
+    this.navHelper.goJoin();
+  }
+
+  public goRules(): void {
+    this.navHelper.goRules();
+  }
+
   public goToProfile(): void {
     this.navHelper.goToProfile();
   }
