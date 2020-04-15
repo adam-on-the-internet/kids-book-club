@@ -4,7 +4,15 @@
   </p>
   <p>This books debate will be on {{ book.date }}.</p>
   <hr />
-  <p>Debate sides:</p>
+  <h4>Debate</h4>
+  <p>{{ book.debateQuestion }}</p>
+  <ng-container *ngFor="let side of book.sides">
+    <p>
+      <strong>{{ side.name }}:</strong>
+      {{ side.details }}
+    </p>
+  </ng-container>
+  <hr />
   <p>
     <iframe
       width="500"
