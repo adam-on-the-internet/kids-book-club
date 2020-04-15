@@ -1,0 +1,18 @@
+<app-card [autoHeight]="false" [title]="titleText" *ngIf="hasBook">
+  <p>
+    {{ book.details }}
+  </p>
+  <p>This books debate will be on {{ book.date }}.</p>
+  <hr />
+  <p>Debate sides:</p>
+  <p>
+    <iframe
+      width="500"
+      height="300"
+      [src]="youtubeLink"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </p>
+</app-card>

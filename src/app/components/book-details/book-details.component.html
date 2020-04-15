@@ -1,1 +1,16 @@
-<p>book-details works!</p>
+<app-header [title]="'Book Details'"></app-header>
+<app-body>
+  <div class="row">
+    <div class="col-md-12 my-3">
+      <app-book-info-card
+        *ngIf="ready; else loading"
+        [next]="true"
+        [book]="bookService.nextBook"
+      ></app-book-info-card>
+    </div>
+  </div>
+</app-body>
+
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>

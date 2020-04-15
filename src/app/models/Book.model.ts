@@ -3,6 +3,7 @@ export interface Book {
   title: string;
   details: string;
   debateQuestion: string;
+  date: string;
   sides: Side[];
   youtubeLink: string;
 }

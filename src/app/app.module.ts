@@ -22,7 +22,7 @@ import { BookListComponent } from "./components/book-list/book-list.component";
 import { BookDetailsComponent } from "./components/book-details/book-details.component";
 import { MailListComponent } from "./components/mail-list/mail-list.component";
 import { DetailsComponent } from "./components/details/details.component";
-import { BookInfoCardComponent } from "./component/book-info-card/book-info-card.component";
+import { BookInfoCardComponent } from "./components/book-info-card/book-info-card.component";
 
 @NgModule({
   declarations: [

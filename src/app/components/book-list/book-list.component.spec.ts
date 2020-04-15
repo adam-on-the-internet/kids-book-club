@@ -5,7 +5,7 @@ import { HeaderComponent } from "../header/header.component";
 import { BodyComponent } from "../body/body.component";
 import { CardComponent } from "../card/card.component";
 import { RouterTestingModule } from "@angular/router/testing";
-import { BookInfoCardComponent } from "src/app/component/book-info-card/book-info-card.component";
+import { BookInfoCardComponent } from "src/app/components/book-info-card/book-info-card.component";
 
 describe("BookListComponent", () => {
   let component: BookListComponent;
