@@ -16,6 +16,14 @@ export class BookInfoCardComponent {
     return BooleanHelper.hasValue(this.book);
   }
 
+  public get hasYoutubeLink(): boolean {
+    return BooleanHelper.hasValue(this.book.youtubeLink);
+  }
+
+  public get hasPdfLink(): boolean {
+    return BooleanHelper.hasValue(this.book.pdfLink);
+  }
+
   public get titleText(): string {
     if (!this.hasBook) {
       return null;
@@ -27,7 +35,7 @@ export class BookInfoCardComponent {
   }
 
   public get youtubeLink() {
-    if (!this.hasBook) {
+    if (!this.hasBook || !this.hasYoutubeLink) {
       return null;
     }
     const dangerousVideoUrl = "https://www.youtube.com/embed/" + this.book.youtubeLink;

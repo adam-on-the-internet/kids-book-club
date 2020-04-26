@@ -136,6 +136,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kids-book-club"
+    }
+  },
+  "defaultProject": "kids-book-club",
+  "cli": {
+    "analytics": false
+  }
 }

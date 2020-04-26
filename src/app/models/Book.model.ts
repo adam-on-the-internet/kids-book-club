@@ -5,7 +5,8 @@ export interface Book {
   debateQuestion: string;
   date: string;
   sides: Side[];
-  youtubeLink: string;
+  youtubeLink?: string;
+  pdfLink?: string;
 }
 
 export interface Side {

@@ -5,21 +5,40 @@
   <p>This books debate will be on {{ book.date }}.</p>
   <hr />
   <h4>Debate</h4>
-  <p>{{ book.debateQuestion }}</p>
-  <ng-container *ngFor="let side of book.sides; let i = index">
+  <ng-container *ngIf="book.debateQuestion; else noQuestionYet">
+    <p>{{ book.debateQuestion }}</p>
+    <ng-container *ngFor="let side of book.sides; let i = index">
+      <p>
+        Side #{{ i + 1 }}
+        <strong>{{ side.name }} - </strong>
+        {{ side.details }}
+      </p>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="hasPdfLink">
+    <hr />
+    <h4>PDF Link</h4>
     <p>
-      Side #{{ i + 1 }}
-      <strong>{{ side.name }} - </strong>
-      {{ side.details }}
+      <a [attr.href]="book.pdfLink" target="_blank" class="btn btn-secondary">
+        <i class="fa fa-file"></i>
+        View PDF
+      </a>
     </p>
   </ng-container>
-  <hr />
-  <p>
-    <iframe
-      [src]="youtubeLink"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </p>
+  <ng-container *ngIf="hasYoutubeLink">
+    <hr />
+    <h4>Youtube Link</h4>
+    <p>
+      <iframe
+        [src]="youtubeLink"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </p>
+  </ng-container>
 </app-card>
+
+<ng-template #noQuestionYet>
+  <p>The debate question has not been picked yet.</p>
+</ng-template>

@@ -22,6 +22,20 @@ export const MIKE_MULLIGAN: Book = {
   youtubeLink: "NQjHJKNyoUE",
 };
 
+export const SYLVESTER: Book = {
+  id: "2",
+  title: "Sylvester and the Magic Pebble",
+  details: `The second book for the kids book debate club is
+  Sylvester and the Magic Pebble, the story of a donkey who collects strange rocks. There are PDF and YouTube links available for this story.`,
+  debateQuestion: null,
+  date: "Sunday, May 17th, 2020",
+  sides: [
+  ],
+  youtubeLink: "BNGUnk8JeLE",
+  pdfLink: "https://epdf.pub/sylvester-and-the-magic-pebble.html",
+};
+
 export const BOOK_LIST: Book[] = [
-  MIKE_MULLIGAN
+  SYLVESTER,
+  MIKE_MULLIGAN,
 ];
