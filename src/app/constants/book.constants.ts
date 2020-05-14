@@ -7,8 +7,8 @@ export const MIKE_MULLIGAN: Book = {
   details: `The first book for the kids book debate club is
   Mike Mulligan and his Steam Shovel. You can watch someone
   read the book out loud (with the illustrations!) below.`,
-  debateQuestion: `The book claims that Mike Mulligan loves Mary Anne, but is their love related to the working relationship they have? Or is their love deep and noble?`,
   date: "Sunday, April 19, 2020",
+  debateQuestion: `The book claims that Mike Mulligan loves Mary Anne, but is their love related to the working relationship they have? Or is their love deep and noble?`,
   sides: [
     {
       name: "TRUE LOVE",
@@ -27,9 +27,17 @@ export const SYLVESTER: Book = {
   title: "Sylvester and the Magic Pebble",
   details: `The second book for the kids book debate club is
   Sylvester and the Magic Pebble, the story of a donkey who collects strange rocks. There are PDF and YouTube links available for this story.`,
-  debateQuestion: null,
-  date: "Sunday, May 17th, 2020",
+  date: "Sunday, May 24th, 2020",
+  debateQuestion: `Would it have been better if Sylvester had remained a rock?`,
   sides: [
+    {
+      name: "Yes",
+      details: "Sylvester should have remained a rock.",
+    },
+    {
+      name: "No",
+      details: "Sylvester should not have remained a rock.",
+    },
   ],
   youtubeLink: "BNGUnk8JeLE",
   pdfLink: "https://epdf.pub/sylvester-and-the-magic-pebble.html",
