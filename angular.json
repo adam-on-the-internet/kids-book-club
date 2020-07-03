@@ -134,6 +134,10 @@
               "devServerTarget": "kids-book-club:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
